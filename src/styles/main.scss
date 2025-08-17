@@ -1,0 +1,26 @@
+@use 'utils/typography';
+@use 'utils/variables' as *;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+body {
+  font-family: $font-family-primary;
+  color: $black;
+  background-color: $main-bg;
+  font-size: $font-size-base;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
