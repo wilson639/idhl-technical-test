@@ -1,12 +1,6 @@
 .header {
-  background-color: transparent;
+  background-color: var(--color-white);
   padding: 20px 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-
 
   &__container {
     display: flex;
@@ -47,6 +41,13 @@
   }
 
   @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: transparent;
+
     &__container {
       padding-left: 20px;
       padding-right: 20px;
