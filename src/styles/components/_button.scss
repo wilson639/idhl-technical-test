@@ -13,6 +13,10 @@
   &--primary {
     color: var(--color-white);
     background-color: var(--color-orange);
+
+    &:hover {
+      background-color: var(--color-dark-orange);
+    }
   }
 
   &--xpadding {
