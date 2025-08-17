@@ -1,5 +1,7 @@
 @use 'utils/typography';
 @use 'utils/variables' as *;
+@use 'layout/header';
+@use 'components/cart-drawer';
 @use 'components/featured-product' as *;
 @use 'components/product-card';
 @use 'components/button';
@@ -31,4 +33,14 @@ body {
 // Utility classes
 .text-center {
   text-align: center;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

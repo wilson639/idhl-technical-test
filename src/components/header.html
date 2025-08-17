@@ -1,0 +1,57 @@
+<header class="header">
+  <div class="header__container">
+    <a href="/" class="header__logo">
+      <img src="assets/svg/logo.svg" alt="">
+    </a>
+    <nav>
+      <button type="button" id="cart-toggle" class="header__bag-btn">
+        <span class="sr-only">Expand Cart Menu</span>
+        <span class="header__bag-btn--count">2</span>
+        <img src="assets/svg/bag.svg" alt="">
+      </button>
+    </nav>
+  </div>
+  
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="cart-drawer">
+    <!-- Cart Content -->
+    <div class="cart-content">
+      <div class="cart-header">
+        <p class="cart-title h3">Your Bag</p>
+        <button type="button" class="js-cart-close cart-close" aria-label="Close cart">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="cart-items">
+        <!-- Sample cart items for demonstration -->
+        <div class="cart-item">
+          <div class="cart-item__image">
+            <img src="assets/png/chicken.png" alt="Dog Food">
+          </div>
+          <div class="cart-item__details">
+            <p class="cart-item__title">Natures Menu Dog Food Can Chicken</p>
+            <p class="cart-item__price">£22.81</p>
+            <button type="button" class="cart-item__remove js-cart-close" aria-label="Remove item">
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cart-footer">
+        <div class="cart-total text-center">
+          <span class="cart-total__label">Subtotal:</span>
+          <span class="cart-total__amount">£70.29</span>
+        </div>
+        <button type="button" class="button button--primary">Proceed to Checkout</button>
+        <button type="button" class="js-cart-close cart-footer__continue">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Cart Overlay -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+</header>
