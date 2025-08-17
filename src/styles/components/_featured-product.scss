@@ -1,5 +1,5 @@
-.landing {
-  &__hero {
+.featured-product {
+  &__body {
     padding: 60px 15px;
     text-align: center;
     background-color: var(--color-white);
@@ -14,7 +14,7 @@
     }
   }
 
-  &__featured-product {
+  &__product {
     padding: 60px 15px;
 
     .product-card {
@@ -24,7 +24,7 @@
   }
 
   @media screen and (min-width: 390px) {
-    &__featured-product, &__hero {
+    &__product, &__body {
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -36,7 +36,7 @@
       flex-direction: row;
     }
 
-    &__featured-product, &__hero {
+    &__product, &__body {
       flex-basis: 50%;
       // I wasn't sure if the design is intended to be full height or not so this is a guess
       min-height: 100vh;
@@ -46,14 +46,14 @@
       justify-content: center;
     }
 
-    &__hero-container {
+    &__body-container {
       max-width: 600px;
       margin: 0 auto; 
     }
   }
 
   @media screen and (min-width: 1200px) {
-    &__featured-product, &__hero {
+    &__product, &__body {
       padding: 60px;
     }
   }
