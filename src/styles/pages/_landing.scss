@@ -1,0 +1,9 @@
+.featured-product {
+  margin: 0 15px;
+}
+
+@media screen and (min-width: 390px) {
+  .featured-product {
+    margin: 0 40px;
+  }
+}

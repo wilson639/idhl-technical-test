@@ -1,0 +1,54 @@
+// Product Card Component
+.product-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px 50px;
+  
+  &:hover {
+    text-decoration: underline;
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+  
+  &__image-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    margin-bottom: 25px;
+  }
+  
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: absolute;
+    inset: 0;
+  }
+  
+  &__title {
+    font-size: 1.8rem;
+    color: var(--color-black);
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+  
+  
+  &__price {
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: var(--color-orange);
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__price {
+      font-size: 2.4rem;
+      line-height: 1.4;
+    }
+  }
+}

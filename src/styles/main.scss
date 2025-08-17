@@ -1,5 +1,7 @@
 @use 'utils/typography';
 @use 'utils/variables' as *;
+@use 'components/product-card';
+@use 'components/button';
 
 // Global styles
 * {
@@ -23,4 +25,9 @@ body {
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
 }
