@@ -15,7 +15,10 @@ module.exports = (env, argv) => {
       assetModuleFilename: 'assets/[name].[hash][ext]',
     },
     devServer: {
-      static: './dist',
+      static: {
+        directory: path.join(__dirname, 'src'),
+        publicPath: '/'
+      },
       hot: true,
       open: true,
     },
