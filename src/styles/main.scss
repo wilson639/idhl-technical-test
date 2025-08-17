@@ -1,5 +1,6 @@
 @use 'utils/typography';
 @use 'utils/variables' as *;
+@use 'utils/animation';
 @use 'layout/header';
 @use 'components/cart-drawer';
 @use 'components/featured-product' as *;
